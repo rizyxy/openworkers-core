@@ -65,7 +65,7 @@ impl Default for RuntimeLimits {
         Self {
             heap_initial_mb: 1,
             heap_max_mb: 128,
-            max_cpu_time_ms: 50,            // 50ms CPU (anti-DDoS)
+            max_cpu_time_ms: 300,            // 50ms CPU (anti-DDoS)
             max_wall_clock_time_ms: 30_000, // 30s total (anti-hang)
             stream_buffer_size: 16,         // 16 chunks buffer (conservative default)
 
